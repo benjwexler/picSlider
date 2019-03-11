@@ -1,0 +1,82 @@
+body {
+  overflow: hidden;
+}
+
+#sliderContainer {
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px 5px;
+  position: relative;
+  /* margin-left: -200px; */
+  
+}
+
+.pic {
+  border: 1px solid black;
+  width: 45%;
+  height: 100%;
+  /* margin: 0px 5px; */
+  /* margin: 10px; */
+  box-sizing: border-box;
+  margin-right: 5%;
+  /* transition: background .3s; */
+
+}
+
+.divier {
+  height: 100%;
+  width: 5%;
+}
+
+#pic1 {
+  /* background: yellow; */
+   /* animation: slideRight 1s 2s 1 forwards; */
+   z-index: 2
+}
+
+/* .translate105percent {
+  transform: translateX(105%)
+} */
+
+.slideRight {
+  animation: slideRight .5s linear 1 forwards;
+}
+
+#pic2 {
+  /* background: purple; */
+  /* animation: disappear 1s 2s 1 forwards; */
+}
+
+.disappear {
+  animation: disappear .5s linear 1 forwards;
+}
+
+/* .opacityZero {
+  opacity: 0;
+} */
+
+#pic3 {
+  /* background: green; */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /* display: none; */
+
+}
+
+@keyframes slideRight {
+  0% {transform: translateX(0%);}
+  60% {transform: translateX(52%);}
+  100% {transform: translateX(105%);}
+}
+
+@keyframes disappear {
+  0% {opacity: 1}
+  50% {opacity: 1}
+  100% {opacity: 0}
+}
+
+
