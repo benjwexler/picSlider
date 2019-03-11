@@ -5,25 +5,71 @@ body {
 #sliderContainer {
   width: 800px;
   height: 600px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   box-sizing: border-box;
-  margin: 0px 5px;
+  margin: 20px 5px;
   position: relative;
-  /* margin-left: -200px; */
+  margin-left: -180px;
   
 }
 
 .pic {
-  border: 1px solid black;
+  /* border: 1px solid rgb(103, 103, 103); */
   width: 45%;
   height: 100%;
   /* margin: 0px 5px; */
   /* margin: 10px; */
   box-sizing: border-box;
   margin-right: 5%;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 2px 2px 20px black;
+  /* background: black; */
+  /* color: white; */
   /* transition: background .3s; */
 
+}
+
+.topHalf {
+  height: 60%;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.bottomHalf {
+  height: 40%;
+  width: 100%;
+  /* border: 1px solid black; */
+  text-align: center;
+  box-sizing: border-box
+
+}
+
+.text {
+  padding-top: 20px;
+  height: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 17px;
+}
+
+.logoContainer {
+  height: 50%;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px
+  
+}
+
+.logo {
+  /* height: 80%; */
+  /* width: 40%; */
+  width: 64px;
+  margin: auto;
+  
+  
 }
 
 .divier {
@@ -43,6 +89,8 @@ body {
 
 .slideRight {
   animation: slideRight .5s linear 1 forwards;
+  /* animation: slideRight .8s cubic-bezier(.86,0,.07,1) 1 forwards; */
+  
 }
 
 #pic2 {
@@ -51,6 +99,7 @@ body {
 }
 
 .disappear {
+  /* animation: disappear .4s linear 1 forwards; */
   animation: disappear .5s linear 1 forwards;
 }
 
@@ -63,19 +112,26 @@ body {
   position: absolute;
   left: 0px;
   top: 0px;
+  z-index: -3
   /* display: none; */
 
 }
 
 @keyframes slideRight {
   0% {transform: translateX(0%);}
-  60% {transform: translateX(52%);}
+  /* 5% {transform: translateX(20%);} */
+  80% {transform: translateX(52%);}
   100% {transform: translateX(105%);}
+  /* 0% {transform: translateX(0%);}
+  20% {transform: translateX(40%);}
+  75% {transform: translateX(52%);}
+  100% {transform: translateX(105%);} */
 }
 
 @keyframes disappear {
   0% {opacity: 1}
-  50% {opacity: 1}
+  /* 60% {opacity: 1} */
+  40% {opacity: 1}
   100% {opacity: 0}
 }
 
